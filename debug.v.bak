@@ -1,0 +1,26 @@
+// debug : reg debug module
+
+module debug(flin, aout, bout);
+
+input wire flin;
+
+output reg aout;
+output reg bout;
+
+initial begin
+  aout <= 1'b0;
+  bout <= 1'b0;
+end
+
+always @(flin) begin
+  if(flin == 1'b0) begin
+    aout <= 1'b0;
+    bout <= 1'b1;
+  end
+  else begin
+    aout <= 1'b0;
+    bout <= 1'b0;
+  end
+end
+
+endmodule

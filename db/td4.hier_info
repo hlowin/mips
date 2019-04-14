@@ -1,0 +1,869 @@
+|test
+dlclk <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+clk => dlclock:inst.clk
+reg0a <= hc161:inst6.aqout
+rst => hc161:inst7.rst
+rst => hc74:inst8.rst
+rst => hc161:inst3.rst
+rst => hc161:inst4.rst
+rst => hc161:inst6.rst
+reg0b <= hc161:inst6.bqout
+reg0c <= hc161:inst6.cqout
+reg0d <= hc161:inst6.dqout
+reg2a <= hc161:inst3.aqout
+reg2b <= hc161:inst3.bqout
+reg2c <= hc161:inst3.cqout
+reg2d <= hc161:inst3.dqout
+seg[0] <= seg:inst14.seg[0]
+seg[1] <= seg:inst14.seg[1]
+seg[2] <= seg:inst14.seg[2]
+seg[3] <= seg:inst14.seg[3]
+seg[4] <= seg:inst14.seg[4]
+seg[5] <= seg:inst14.seg[5]
+seg[6] <= seg:inst14.seg[6]
+seg[7] <= seg:inst14.seg[7]
+
+
+|test|dlclock:inst
+clk => dlclk~reg0.CLK
+clk => delay[0].CLK
+clk => delay[1].CLK
+clk => delay[2].CLK
+clk => delay[3].CLK
+clk => delay[4].CLK
+clk => delay[5].CLK
+clk => delay[6].CLK
+clk => delay[7].CLK
+clk => delay[8].CLK
+clk => delay[9].CLK
+clk => delay[10].CLK
+clk => delay[11].CLK
+clk => delay[12].CLK
+clk => delay[13].CLK
+clk => delay[14].CLK
+clk => delay[15].CLK
+clk => delay[16].CLK
+clk => delay[17].CLK
+clk => delay[18].CLK
+clk => delay[19].CLK
+clk => delay[20].CLK
+clk => delay[21].CLK
+clk => delay[22].CLK
+clk => delay[23].CLK
+clk => delay[24].CLK
+clk => delay[25].CLK
+clk => delay[26].CLK
+clk => delay[27].CLK
+dlclk <= dlclk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst6
+aqout <= dflipf:inst.qout
+adin => dffsel:inst6.din
+ld => dffsel:inst6.ld
+ld => dffsel:inst9.ld
+ld => dffsel:inst10.ld
+ld => dffsel:inst11.ld
+enp => inst20.IN0
+ent => inst20.IN1
+rst => dflipf:inst.rst
+rst => dflipf:inst5.rst
+rst => dflipf:inst7.rst
+rst => dflipf:inst8.rst
+clk => dflipf:inst.clk
+clk => dflipf:inst5.clk
+clk => dflipf:inst7.clk
+clk => dflipf:inst8.clk
+bqout <= dflipf:inst5.qout
+bdin => dffsel:inst9.din
+cqout <= dflipf:inst7.qout
+cdin => dffsel:inst10.din
+dqout <= dflipf:inst8.qout
+ddin => dffsel:inst11.din
+
+
+|test|hc161:inst6|dflipf:inst
+din => qout~reg0.DATAIN
+rst => qout~reg0.ACLR
+clk => qout~reg0.CLK
+qout <= qout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst6|fadd:inst13
+cin => cout.IN0
+cin => cout.IN0
+cin => sout.IN1
+ain => cout.IN0
+ain => cout.IN1
+ain => sout.IN0
+bin => cout.IN1
+bin => cout.IN1
+bin => sout.IN1
+sout <= sout.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst6|dffsel:inst6
+qin => dout.DATAB
+din => dout.DATAA
+ld => dout.OUTPUTSELECT
+dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst6|dflipf:inst5
+din => qout~reg0.DATAIN
+rst => qout~reg0.ACLR
+clk => qout~reg0.CLK
+qout <= qout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst6|fadd:inst12
+cin => cout.IN0
+cin => cout.IN0
+cin => sout.IN1
+ain => cout.IN0
+ain => cout.IN1
+ain => sout.IN0
+bin => cout.IN1
+bin => cout.IN1
+bin => sout.IN1
+sout <= sout.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst6|dffsel:inst9
+qin => dout.DATAB
+din => dout.DATAA
+ld => dout.OUTPUTSELECT
+dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst6|dflipf:inst7
+din => qout~reg0.DATAIN
+rst => qout~reg0.ACLR
+clk => qout~reg0.CLK
+qout <= qout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst6|fadd:inst4
+cin => cout.IN0
+cin => cout.IN0
+cin => sout.IN1
+ain => cout.IN0
+ain => cout.IN1
+ain => sout.IN0
+bin => cout.IN1
+bin => cout.IN1
+bin => sout.IN1
+sout <= sout.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst6|dffsel:inst10
+qin => dout.DATAB
+din => dout.DATAA
+ld => dout.OUTPUTSELECT
+dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst6|dflipf:inst8
+din => qout~reg0.DATAIN
+rst => qout~reg0.ACLR
+clk => qout~reg0.CLK
+qout <= qout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst6|fadd:inst3
+cin => cout.IN0
+cin => cout.IN0
+cin => sout.IN1
+ain => cout.IN0
+ain => cout.IN1
+ain => sout.IN0
+bin => cout.IN1
+bin => cout.IN1
+bin => sout.IN1
+sout <= sout.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst6|dffsel:inst11
+qin => dout.DATAB
+din => dout.DATAA
+ld => dout.OUTPUTSELECT
+dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc283:inst1
+s1out <= fadd:inst3.sout
+a1in => fadd:inst3.ain
+b1in => fadd:inst3.bin
+c0in => fadd:inst3.cin
+s2out <= fadd:inst2.sout
+a2in => fadd:inst2.ain
+b2in => fadd:inst2.bin
+s3out <= fadd:inst1.sout
+a3in => fadd:inst1.ain
+b3in => fadd:inst1.bin
+s4out <= fadd:inst.sout
+a4in => fadd:inst.ain
+b4in => fadd:inst.bin
+c4out <= fadd:inst.cout
+
+
+|test|hc283:inst1|fadd:inst3
+cin => cout.IN0
+cin => cout.IN0
+cin => sout.IN1
+ain => cout.IN0
+ain => cout.IN1
+ain => sout.IN0
+bin => cout.IN1
+bin => cout.IN1
+bin => sout.IN1
+sout <= sout.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc283:inst1|fadd:inst2
+cin => cout.IN0
+cin => cout.IN0
+cin => sout.IN1
+ain => cout.IN0
+ain => cout.IN1
+ain => sout.IN0
+bin => cout.IN1
+bin => cout.IN1
+bin => sout.IN1
+sout <= sout.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc283:inst1|fadd:inst1
+cin => cout.IN0
+cin => cout.IN0
+cin => sout.IN1
+ain => cout.IN0
+ain => cout.IN1
+ain => sout.IN0
+bin => cout.IN1
+bin => cout.IN1
+bin => sout.IN1
+sout <= sout.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc283:inst1|fadd:inst
+cin => cout.IN0
+cin => cout.IN0
+cin => sout.IN1
+ain => cout.IN0
+ain => cout.IN1
+ain => sout.IN0
+bin => cout.IN1
+bin => cout.IN1
+bin => sout.IN1
+sout <= sout.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc153:inst12
+1yout <= datasel:inst2.yout
+ain => datasel:inst2.ain
+ain => datasel:inst1.ain
+bin => datasel:inst2.bin
+bin => datasel:inst1.bin
+1gbin => datasel:inst2.gbin
+1c0in => datasel:inst2.c0in
+1c1in => datasel:inst2.c1in
+1c2in => datasel:inst2.c2in
+1c3in => datasel:inst2.c3in
+2yout <= datasel:inst1.yout
+2gbin => datasel:inst1.gbin
+2c0in => datasel:inst1.c0in
+2c1in => datasel:inst1.c1in
+2c2in => datasel:inst1.c2in
+2c3in => datasel:inst1.c3in
+
+
+|test|hc153:inst12|datasel:inst2
+ain => always0.IN0
+ain => always0.IN0
+ain => always0.IN0
+ain => always0.IN0
+bin => always0.IN1
+bin => always0.IN1
+bin => always0.IN1
+bin => always0.IN1
+gbin => yout$latch.ACLR
+c0in => yout.DATAA
+c1in => yout.DATAB
+c2in => yout.DATAB
+c3in => yout.DATAB
+yout <= yout$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc153:inst12|datasel:inst1
+ain => always0.IN0
+ain => always0.IN0
+ain => always0.IN0
+ain => always0.IN0
+bin => always0.IN1
+bin => always0.IN1
+bin => always0.IN1
+bin => always0.IN1
+gbin => yout$latch.ACLR
+c0in => yout.DATAA
+c1in => yout.DATAB
+c2in => yout.DATAB
+c3in => yout.DATAB
+yout <= yout$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|decoder:inst9
+op0in => aout.IN0
+op0in => ld3out.IN0
+op1in => bout.DATAIN
+op2in => ld0out.IN0
+op2in => ld2out.IN0
+op2in => ld1out.IN0
+op2in => ld3out.IN0
+op3in => aout.IN1
+op3in => ld0out.IN1
+op3in => ld1out.IN1
+op3in => ld2out.IN1
+op3in => ld3out.IN1
+cin => ld3out.IN1
+aout <= aout.DB_MAX_OUTPUT_PORT_TYPE
+bout <= op1in.DB_MAX_OUTPUT_PORT_TYPE
+ld0out <= ld0out.DB_MAX_OUTPUT_PORT_TYPE
+ld1out <= ld1out.DB_MAX_OUTPUT_PORT_TYPE
+ld2out <= ld2out.DB_MAX_OUTPUT_PORT_TYPE
+ld3out <= ld3out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|rom:inst13
+a0in => Equal0.IN3
+a0in => Equal1.IN0
+a0in => Equal2.IN3
+a0in => Equal3.IN1
+a0in => Equal4.IN3
+a1in => Equal0.IN2
+a1in => Equal1.IN3
+a1in => Equal2.IN0
+a1in => Equal3.IN0
+a1in => Equal4.IN2
+a2in => Equal0.IN1
+a2in => Equal1.IN2
+a2in => Equal2.IN2
+a2in => Equal3.IN3
+a2in => Equal4.IN0
+a3in => Equal0.IN0
+a3in => Equal1.IN1
+a3in => Equal2.IN1
+a3in => Equal3.IN2
+a3in => Equal4.IN1
+d0out <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+d1out <= <GND>
+d2out <= <GND>
+d3out <= <GND>
+d4out <= data[4].DB_MAX_OUTPUT_PORT_TYPE
+d5out <= data[5].DB_MAX_OUTPUT_PORT_TYPE
+d6out <= data[6].DB_MAX_OUTPUT_PORT_TYPE
+d7out <= data[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst7
+aqout <= dflipf:inst.qout
+adin => dffsel:inst6.din
+ld => dffsel:inst6.ld
+ld => dffsel:inst9.ld
+ld => dffsel:inst10.ld
+ld => dffsel:inst11.ld
+enp => inst20.IN0
+ent => inst20.IN1
+rst => dflipf:inst.rst
+rst => dflipf:inst5.rst
+rst => dflipf:inst7.rst
+rst => dflipf:inst8.rst
+clk => dflipf:inst.clk
+clk => dflipf:inst5.clk
+clk => dflipf:inst7.clk
+clk => dflipf:inst8.clk
+bqout <= dflipf:inst5.qout
+bdin => dffsel:inst9.din
+cqout <= dflipf:inst7.qout
+cdin => dffsel:inst10.din
+dqout <= dflipf:inst8.qout
+ddin => dffsel:inst11.din
+
+
+|test|hc161:inst7|dflipf:inst
+din => qout~reg0.DATAIN
+rst => qout~reg0.ACLR
+clk => qout~reg0.CLK
+qout <= qout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst7|fadd:inst13
+cin => cout.IN0
+cin => cout.IN0
+cin => sout.IN1
+ain => cout.IN0
+ain => cout.IN1
+ain => sout.IN0
+bin => cout.IN1
+bin => cout.IN1
+bin => sout.IN1
+sout <= sout.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst7|dffsel:inst6
+qin => dout.DATAB
+din => dout.DATAA
+ld => dout.OUTPUTSELECT
+dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst7|dflipf:inst5
+din => qout~reg0.DATAIN
+rst => qout~reg0.ACLR
+clk => qout~reg0.CLK
+qout <= qout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst7|fadd:inst12
+cin => cout.IN0
+cin => cout.IN0
+cin => sout.IN1
+ain => cout.IN0
+ain => cout.IN1
+ain => sout.IN0
+bin => cout.IN1
+bin => cout.IN1
+bin => sout.IN1
+sout <= sout.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst7|dffsel:inst9
+qin => dout.DATAB
+din => dout.DATAA
+ld => dout.OUTPUTSELECT
+dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst7|dflipf:inst7
+din => qout~reg0.DATAIN
+rst => qout~reg0.ACLR
+clk => qout~reg0.CLK
+qout <= qout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst7|fadd:inst4
+cin => cout.IN0
+cin => cout.IN0
+cin => sout.IN1
+ain => cout.IN0
+ain => cout.IN1
+ain => sout.IN0
+bin => cout.IN1
+bin => cout.IN1
+bin => sout.IN1
+sout <= sout.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst7|dffsel:inst10
+qin => dout.DATAB
+din => dout.DATAA
+ld => dout.OUTPUTSELECT
+dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst7|dflipf:inst8
+din => qout~reg0.DATAIN
+rst => qout~reg0.ACLR
+clk => qout~reg0.CLK
+qout <= qout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst7|fadd:inst3
+cin => cout.IN0
+cin => cout.IN0
+cin => sout.IN1
+ain => cout.IN0
+ain => cout.IN1
+ain => sout.IN0
+bin => cout.IN1
+bin => cout.IN1
+bin => sout.IN1
+sout <= sout.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst7|dffsel:inst11
+qin => dout.DATAB
+din => dout.DATAA
+ld => dout.OUTPUTSELECT
+dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc74:inst8
+qout <= dflipf:inst.qout
+din => dflipf:inst.din
+rst => dflipf:inst.rst
+clk => dflipf:inst.clk
+qbout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc74:inst8|dflipf:inst
+din => qout~reg0.DATAIN
+rst => qout~reg0.ACLR
+clk => qout~reg0.CLK
+qout <= qout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst3
+aqout <= dflipf:inst.qout
+adin => dffsel:inst6.din
+ld => dffsel:inst6.ld
+ld => dffsel:inst9.ld
+ld => dffsel:inst10.ld
+ld => dffsel:inst11.ld
+enp => inst20.IN0
+ent => inst20.IN1
+rst => dflipf:inst.rst
+rst => dflipf:inst5.rst
+rst => dflipf:inst7.rst
+rst => dflipf:inst8.rst
+clk => dflipf:inst.clk
+clk => dflipf:inst5.clk
+clk => dflipf:inst7.clk
+clk => dflipf:inst8.clk
+bqout <= dflipf:inst5.qout
+bdin => dffsel:inst9.din
+cqout <= dflipf:inst7.qout
+cdin => dffsel:inst10.din
+dqout <= dflipf:inst8.qout
+ddin => dffsel:inst11.din
+
+
+|test|hc161:inst3|dflipf:inst
+din => qout~reg0.DATAIN
+rst => qout~reg0.ACLR
+clk => qout~reg0.CLK
+qout <= qout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst3|fadd:inst13
+cin => cout.IN0
+cin => cout.IN0
+cin => sout.IN1
+ain => cout.IN0
+ain => cout.IN1
+ain => sout.IN0
+bin => cout.IN1
+bin => cout.IN1
+bin => sout.IN1
+sout <= sout.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst3|dffsel:inst6
+qin => dout.DATAB
+din => dout.DATAA
+ld => dout.OUTPUTSELECT
+dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst3|dflipf:inst5
+din => qout~reg0.DATAIN
+rst => qout~reg0.ACLR
+clk => qout~reg0.CLK
+qout <= qout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst3|fadd:inst12
+cin => cout.IN0
+cin => cout.IN0
+cin => sout.IN1
+ain => cout.IN0
+ain => cout.IN1
+ain => sout.IN0
+bin => cout.IN1
+bin => cout.IN1
+bin => sout.IN1
+sout <= sout.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst3|dffsel:inst9
+qin => dout.DATAB
+din => dout.DATAA
+ld => dout.OUTPUTSELECT
+dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst3|dflipf:inst7
+din => qout~reg0.DATAIN
+rst => qout~reg0.ACLR
+clk => qout~reg0.CLK
+qout <= qout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst3|fadd:inst4
+cin => cout.IN0
+cin => cout.IN0
+cin => sout.IN1
+ain => cout.IN0
+ain => cout.IN1
+ain => sout.IN0
+bin => cout.IN1
+bin => cout.IN1
+bin => sout.IN1
+sout <= sout.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst3|dffsel:inst10
+qin => dout.DATAB
+din => dout.DATAA
+ld => dout.OUTPUTSELECT
+dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst3|dflipf:inst8
+din => qout~reg0.DATAIN
+rst => qout~reg0.ACLR
+clk => qout~reg0.CLK
+qout <= qout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst3|fadd:inst3
+cin => cout.IN0
+cin => cout.IN0
+cin => sout.IN1
+ain => cout.IN0
+ain => cout.IN1
+ain => sout.IN0
+bin => cout.IN1
+bin => cout.IN1
+bin => sout.IN1
+sout <= sout.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst3|dffsel:inst11
+qin => dout.DATAB
+din => dout.DATAA
+ld => dout.OUTPUTSELECT
+dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst4
+aqout <= dflipf:inst.qout
+adin => dffsel:inst6.din
+ld => dffsel:inst6.ld
+ld => dffsel:inst9.ld
+ld => dffsel:inst10.ld
+ld => dffsel:inst11.ld
+enp => inst20.IN0
+ent => inst20.IN1
+rst => dflipf:inst.rst
+rst => dflipf:inst5.rst
+rst => dflipf:inst7.rst
+rst => dflipf:inst8.rst
+clk => dflipf:inst.clk
+clk => dflipf:inst5.clk
+clk => dflipf:inst7.clk
+clk => dflipf:inst8.clk
+bqout <= dflipf:inst5.qout
+bdin => dffsel:inst9.din
+cqout <= dflipf:inst7.qout
+cdin => dffsel:inst10.din
+dqout <= dflipf:inst8.qout
+ddin => dffsel:inst11.din
+
+
+|test|hc161:inst4|dflipf:inst
+din => qout~reg0.DATAIN
+rst => qout~reg0.ACLR
+clk => qout~reg0.CLK
+qout <= qout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst4|fadd:inst13
+cin => cout.IN0
+cin => cout.IN0
+cin => sout.IN1
+ain => cout.IN0
+ain => cout.IN1
+ain => sout.IN0
+bin => cout.IN1
+bin => cout.IN1
+bin => sout.IN1
+sout <= sout.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst4|dffsel:inst6
+qin => dout.DATAB
+din => dout.DATAA
+ld => dout.OUTPUTSELECT
+dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst4|dflipf:inst5
+din => qout~reg0.DATAIN
+rst => qout~reg0.ACLR
+clk => qout~reg0.CLK
+qout <= qout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst4|fadd:inst12
+cin => cout.IN0
+cin => cout.IN0
+cin => sout.IN1
+ain => cout.IN0
+ain => cout.IN1
+ain => sout.IN0
+bin => cout.IN1
+bin => cout.IN1
+bin => sout.IN1
+sout <= sout.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst4|dffsel:inst9
+qin => dout.DATAB
+din => dout.DATAA
+ld => dout.OUTPUTSELECT
+dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst4|dflipf:inst7
+din => qout~reg0.DATAIN
+rst => qout~reg0.ACLR
+clk => qout~reg0.CLK
+qout <= qout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst4|fadd:inst4
+cin => cout.IN0
+cin => cout.IN0
+cin => sout.IN1
+ain => cout.IN0
+ain => cout.IN1
+ain => sout.IN0
+bin => cout.IN1
+bin => cout.IN1
+bin => sout.IN1
+sout <= sout.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst4|dffsel:inst10
+qin => dout.DATAB
+din => dout.DATAA
+ld => dout.OUTPUTSELECT
+dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst4|dflipf:inst8
+din => qout~reg0.DATAIN
+rst => qout~reg0.ACLR
+clk => qout~reg0.CLK
+qout <= qout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst4|fadd:inst3
+cin => cout.IN0
+cin => cout.IN0
+cin => sout.IN1
+ain => cout.IN0
+ain => cout.IN1
+ain => sout.IN0
+bin => cout.IN1
+bin => cout.IN1
+bin => sout.IN1
+sout <= sout.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc161:inst4|dffsel:inst11
+qin => dout.DATAB
+din => dout.DATAA
+ld => dout.OUTPUTSELECT
+dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc153:inst16
+1yout <= datasel:inst2.yout
+ain => datasel:inst2.ain
+ain => datasel:inst1.ain
+bin => datasel:inst2.bin
+bin => datasel:inst1.bin
+1gbin => datasel:inst2.gbin
+1c0in => datasel:inst2.c0in
+1c1in => datasel:inst2.c1in
+1c2in => datasel:inst2.c2in
+1c3in => datasel:inst2.c3in
+2yout <= datasel:inst1.yout
+2gbin => datasel:inst1.gbin
+2c0in => datasel:inst1.c0in
+2c1in => datasel:inst1.c1in
+2c2in => datasel:inst1.c2in
+2c3in => datasel:inst1.c3in
+
+
+|test|hc153:inst16|datasel:inst2
+ain => always0.IN0
+ain => always0.IN0
+ain => always0.IN0
+ain => always0.IN0
+bin => always0.IN1
+bin => always0.IN1
+bin => always0.IN1
+bin => always0.IN1
+gbin => yout$latch.ACLR
+c0in => yout.DATAA
+c1in => yout.DATAB
+c2in => yout.DATAB
+c3in => yout.DATAB
+yout <= yout$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|hc153:inst16|datasel:inst1
+ain => always0.IN0
+ain => always0.IN0
+ain => always0.IN0
+ain => always0.IN0
+bin => always0.IN1
+bin => always0.IN1
+bin => always0.IN1
+bin => always0.IN1
+gbin => yout$latch.ACLR
+c0in => yout.DATAA
+c1in => yout.DATAB
+c2in => yout.DATAB
+c3in => yout.DATAB
+yout <= yout$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|seg:inst14
+ain => Decoder0.IN3
+bin => Decoder0.IN2
+cin => Decoder0.IN1
+din => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+seg[7] <= <VCC>
+
+
