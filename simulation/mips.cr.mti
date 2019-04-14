@@ -1,0 +1,29 @@
+C:/Work/intelFPGA_lite/de0-nano/mips/multiplier.v {1 {vlog -work mips -stats=none C:/Work/intelFPGA_lite/de0-nano/mips/multiplier.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module multiplier
+
+Top level modules:
+	multiplier
+
+} {} {}} C:/Work/intelFPGA_lite/de0-nano/mips/comparator.v {1 {vlog -work mips -stats=none C:/Work/intelFPGA_lite/de0-nano/mips/comparator.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module comparator
+
+Top level modules:
+	comparator
+
+} {} {}} C:/Work/intelFPGA_lite/de0-nano/mips/adder.v {1 {vlog -work mips -stats=none C:/Work/intelFPGA_lite/de0-nano/mips/adder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} C:/Work/intelFPGA_lite/de0-nano/mips/substractor.v {1 {vlog -work mips -stats=none C:/Work/intelFPGA_lite/de0-nano/mips/substractor.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module substractor
+
+Top level modules:
+	substractor
+
+} {} {}}
