@@ -10,7 +10,6 @@ module adder #(parameter  N = 8)
               output         cout 
               );
 
-  assign {cout, s} = a + b +cin;
+  assign {cout, s} = a + b + cin;
 
-endmodule 
-
+endmodule
