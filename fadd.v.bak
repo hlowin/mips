@@ -1,0 +1,23 @@
+// fadd : full adder
+
+module fadd(cin, ain, bin, sout, cout);
+
+input wire cin;
+input wire ain;
+input wire bin;
+
+output reg sout;
+output reg cout;
+
+always@(cin or ain or bin) begin
+  if((cin & ain & bin) == 1'b1) begin
+    cout <= 1'b1;
+    sout <= 1'b1;
+  end
+  else if((~cin & ain & bin) == 1'b1 or (cin & ~ain & bin) == 1'b1 or (cin & ain & ~bin) == 1'b1)
+    cout <= 1'b1;
+  else if((~cin & ~ain & bin) == 1'b1 or (~cin & ain & ~bin) == 1'b1 or (cin & ~ain & ~bin) == 1'b1)
+    sout <= 1'b1;
+end
+
+endmodule
