@@ -147,3 +147,5 @@ wave modify -driver freeze -pattern random -initialvalue 0 -period 200ps -random
 run
 write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Work/GitHub/mips_chapter5/simulation/wave_counter.do
 wave editwrite -file C:/Work/GitHub/mips_chapter5/simulation/wave_counter.do -append
+# End time: 23:57:45 on Apr 15,2019, Elapsed time: 0:04:03
+# Errors: 0, Warnings: 0
