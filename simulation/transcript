@@ -1,0 +1,149 @@
+# Compile of multiplier.v was successful.
+# Compile of counter.v failed with 2 errors.
+# 2 compiles, 4 failed with 2 errors.
+# Compile of substractor.v was successful.
+# Compile of adder.v was successful.
+# Compile of comparator.v was successful.
+# Compile of counter.v failed with 2 errors.
+# Compile of multiplier.v was successful.
+# 5 compiles, 1 failed with 2 errors.
+# Compile of counter.v failed with 2 errors.
+# Compile of substractor.v was successful.
+# Compile of adder.v was successful.
+# Compile of comparator.v was successful.
+# Compile of counter.v failed with 2 errors.
+# Compile of multiplier.v was successful.
+# 5 compiles, 1 failed with 2 errors.
+# Compile of substractor.v was successful.
+# Compile of adder.v was successful.
+# Compile of comparator.v was successful.
+# Compile of counter.v failed with 1 errors.
+# Compile of multiplier.v was successful.
+# 5 compiles, 1 failed with 1 error.
+# Compile of substractor.v was successful.
+# Compile of adder.v was successful.
+# Compile of comparator.v was successful.
+# Compile of counter.v failed with 2 errors.
+# Compile of multiplier.v was successful.
+# 5 compiles, 1 failed with 2 errors.
+# Compile of counter.v was successful.
+vsim -gui mips.counter
+# vsim -gui mips.counter 
+# Start time: 23:46:04 on Apr 15,2019
+# Loading mips.counter
+force -freeze sim:/counter/clk 1 0, 0 {50 ps} -r 100
+add wave -position end  sim:/counter/clk
+wave create -driver freeze -pattern random -initialvalue HiZ -period 50ps -random_type Uniform -seed 5 -starttime 0ps -endtime 1000ps sim:/counter/reset
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+add wave -position end  sim:/counter/clk
+add wave -position end  sim:/counter/reset
+add wave -position end  sim:/counter/q
+force -freeze sim:/counter/clk 1 0, 0 {50 ps} -r 100
+add wave -position 0  sim:/counter/clk
+add wave -position end  sim:/counter/reset
+add wave -position end  sim:/counter/q
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+wave modify -driver freeze -pattern random -initialvalue 0 -period 50ps -random_type Normal -seed 1 -starttime 0ps -endtime 1000ps Edit:/counter/reset
+run
+# GetModuleFileName: 指定されたモジュールが見つかりません。
+# 
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -continue
+restart
+force -freeze sim:/counter/clk 1 0, 0 {50 ps} -r 100
+run
+# GetModuleFileName: 指定されたモジュールが見つかりません。
+# 
+# 
+run
+run
+run
+run
+restart
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/counter/reset
+add wave -position 0 -format Logic -height 17 -editable 2 Edit:/counter/reset
+run
+# GetModuleFileName: 指定されたモジュールが見つかりません。
+# 
+# 
+run
+run
+run
+run
+restart
+wave create -driver freeze -pattern clock -initialvalue 0 -period 50ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/counter/clk
+add wave -position 1 -format Logic -height 17 -editable 2 Edit:/counter/clk
+restart
+run
+# GetModuleFileName: 指定されたモジュールが見つかりません。
+# 
+# 
+run
+run
+run
+run
+# Compile of substractor.v was successful.
+# Compile of adder.v was successful.
+# Compile of comparator.v was successful.
+# Compile of counter.v was successful.
+# Compile of multiplier.v was successful.
+# 5 compiles, 0 failed with no errors.
+# Compile of counter.v was successful.
+vsim -gui mips.counter
+# End time: 23:53:42 on Apr 15,2019, Elapsed time: 0:07:38
+# Errors: 0, Warnings: 0
+# vsim -gui mips.counter 
+# Start time: 23:53:42 on Apr 15,2019
+# Loading mips.counter
+wave create -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/counter/clk
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/counter/reset
+add wave -position end  sim:/counter/clk
+add wave -position end  sim:/counter/reset
+add wave -position end  sim:/counter/q
+run
+run
+run
+run
+run
+run
+wave modify -driver freeze -pattern random -initialvalue 0 -period 200ps -random_type Uniform -seed 5 -starttime 0ps -endtime 1000ps Edit:/counter/reset
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Work/GitHub/mips_chapter5/simulation/wave_counter.do
+wave editwrite -file C:/Work/GitHub/mips_chapter5/simulation/wave_counter.do -append
