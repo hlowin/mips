@@ -9,26 +9,26 @@ z2
 cModel Technology
 dC:/Work/intelFPGA_lite/18.1
 vadder
-Z0 !s110 1555340001
+Z0 !s110 1555423534
 !i10b 1
 !s100 _oSPG@P1BzWYG4?m[gX<B3
 IHgH5<ZDWnf48XS4@JM?fg3
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dC:/Work/GitHub/mips_chapter5/simulation
-Z3 w1555242647
+w1555420891
 8C:/Work/GitHub/mips_chapter5/adder.v
 FC:/Work/GitHub/mips_chapter5/adder.v
 L0 4
-Z4 OV;L;10.5b;63
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1555340001.000000
+Z4 !s108 1555423533.000000
 !s107 C:/Work/GitHub/mips_chapter5/adder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Work/GitHub/mips_chapter5/adder.v|
 !i113 1
-Z6 o-work work
-Z7 tCvgOpt 0
+Z5 o-work work
+Z6 tCvgOpt 0
 vcomparator
 R0
 !i10b 1
@@ -36,22 +36,22 @@ R0
 I`jClQ]N[OD]nG0B[7ZSEP0
 R1
 R2
-R3
+Z7 w1555242647
 8C:/Work/GitHub/mips_chapter5/comparator.v
 FC:/Work/GitHub/mips_chapter5/comparator.v
 L0 4
-R4
+R3
 r1
 !s85 0
 31
-R5
+Z8 !s108 1555423534.000000
 !s107 C:/Work/GitHub/mips_chapter5/comparator.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Work/GitHub/mips_chapter5/comparator.v|
 !i113 1
+R5
 R6
-R7
 vcounter
-!s110 1555340008
+R0
 !i10b 1
 !s100 53LaZY<9jie`1AWZJUK4V2
 IfHQfbN[GE7io36=]UBK:j0
@@ -61,16 +61,16 @@ w1555339987
 8C:/Work/GitHub/mips_chapter5/counter.v
 FC:/Work/GitHub/mips_chapter5/counter.v
 L0 4
-R4
+R3
 r1
 !s85 0
 31
-!s108 1555340007.000000
+R8
 !s107 C:/Work/GitHub/mips_chapter5/counter.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Work/GitHub/mips_chapter5/counter.v|
 !i113 1
+R5
 R6
-R7
 vmultiplier
 R0
 !i10b 1
@@ -82,34 +82,55 @@ w1555243989
 8C:/Work/GitHub/mips_chapter5/multiplier.v
 FC:/Work/GitHub/mips_chapter5/multiplier.v
 L0 4
-R4
+R3
 r1
 !s85 0
 31
-R5
+R8
 !s107 C:/Work/GitHub/mips_chapter5/multiplier.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Work/GitHub/mips_chapter5/multiplier.v|
 !i113 1
+R5
 R6
-R7
-vsubstractor
+vshiftreg
 R0
+!i10b 1
+!s100 IHn:SV3kLdk1<2nXnM@9J3
+IE;i4KUjZ`zK3=iE?;k3z62
+R1
+R2
+w1555423528
+8C:/Work/GitHub/mips_chapter5/shiftreg.v
+FC:/Work/GitHub/mips_chapter5/shiftreg.v
+L0 4
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Work/GitHub/mips_chapter5/shiftreg.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Work/GitHub/mips_chapter5/shiftreg.v|
+!i113 1
+R5
+R6
+vsubstractor
+!s110 1555423533
 !i10b 1
 !s100 =`iD4P9AOg<IT;bdn3io71
 I;Rc_Q?Y<i@DQAWn^O:T>80
 R1
 R2
-R3
+R7
 8C:/Work/GitHub/mips_chapter5/substractor.v
 FC:/Work/GitHub/mips_chapter5/substractor.v
 L0 4
-R4
+R3
 r1
 !s85 0
 31
-R5
+R4
 !s107 C:/Work/GitHub/mips_chapter5/substractor.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Work/GitHub/mips_chapter5/substractor.v|
 !i113 1
+R5
 R6
-R7
