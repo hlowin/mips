@@ -1,7 +1,8 @@
 // mips : mips module
 // chapter7 : p405
 
-module mips #(parameter BITWIDTH = 32,
+module mips #(
+              parameter BITWIDTH = 32,
               parameter OPWIDTH = 6,
               parameter FNWIDTH = 6
              )
